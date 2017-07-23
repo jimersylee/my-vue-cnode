@@ -18,5 +18,5 @@
 </script>
 
 <style lang="scss">
-    @import "./common/style/base";
+    @import "./common/style/base";//scss语法 导入css
 </style>
