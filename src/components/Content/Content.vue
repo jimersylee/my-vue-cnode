@@ -42,7 +42,7 @@
         // 该函数负责发起API请求,并分发(dispatch)
         // 'changeTab' 'changeTabData'的action
         // 功能:转换tab主题,返回页面首部,并请求数据
-        this.axios.get()
+        this.axios.get(`https://cnodejs.org/api/v1/topics/?tab=${tabType}&page=1`)
           .then(res => {
             this.$store.dispatch('changeTab', tabType)
             this.$store.dispatch('changeTabData', res.data.data)
